@@ -6,7 +6,8 @@ module Problem0001
 -- Find the sum of all the multiples of 3 or 5 below 1000.
 
 main :: IO ()
-main = print multiplesSum
+main = print (sum (multiplesOfThreeOrFive 999))
 
-multiplesSum :: Integer
-multiplesSum = sum [x | x <- [1..999], x `mod` 3 == 0 || x `mod` 5 == 0]
+multiplesOfThreeOrFive :: Integral a => a -> [a]
+multiplesOfThreeOrFive upperbound = [x | x <- [1..upperbound], x `isMultipleOf` [3,5]]
+                                    where x `isMultipleOf` ys = any (\y -> x `mod` y == 0) ys
