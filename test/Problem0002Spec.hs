@@ -16,7 +16,7 @@ unitTests = testGroup "Problem0002 Unit tests"
         testCase "displays the fibonacci sequence given less than n" $ do
             [] @=? (takeWhile (< 0) $ fibonacci)
             [0,1,1,2,3,5,8] @=? (takeWhile (< 13) $ fibonacci)
-            
+
         , testCase "sums the even fibonacci values" $ do
-            10 @=? (sum . filter odd . takeWhile (< 13) $ fibonacci)
+            10 @=? (sumOfEvenFibLessThan 13)
     ]
