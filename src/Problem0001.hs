@@ -9,7 +9,7 @@ main :: IO ()
 main = do
     putStrLn description
     putStrLn "The answer is:"
-    let answer = sum (multiplesOfThreeOrFive 999)
+    let answer = sum $ multiplesOfThreeOrFive 999
     print answer
     answer `toOutput` "0001"
 
