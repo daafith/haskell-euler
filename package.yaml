@@ -24,6 +24,8 @@ dependencies:
 
 library:
   source-dirs: src
+  dependencies:
+    - directory
 
 executables:
   haskell-euler:
@@ -35,6 +37,7 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - haskell-euler
+    - directory
 
 tests:
   haskell-euler-test:
