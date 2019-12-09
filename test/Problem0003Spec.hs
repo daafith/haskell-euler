@@ -11,7 +11,7 @@ tests :: TestTree
 tests = testGroup "Tests" [unitTests]
 
 unitTests :: TestTree
-unitTests = testGroup "Problem0002 Unit tests"
+unitTests = testGroup "Problem0003 Unit tests"
     [
         testCase "displays the prime factors of n" $ do
             [] @=? (primeFactors 1)

@@ -5,6 +5,7 @@ module Lib
 import qualified Problem0001
 import qualified Problem0002
 import qualified Problem0003
+import qualified Problem0004
 
 runner :: IO ()
 runner = do
@@ -15,5 +16,6 @@ runner = do
         separator
         Problem0003.main
         separator
+        Problem0004.main
 
 separator = putStrLn "\n|------------------|"
