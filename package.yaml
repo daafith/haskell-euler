@@ -38,7 +38,6 @@ executables:
     dependencies:
     - haskell-euler
     - directory
-    - Unique >= 0.4.7.6
 
 tests:
   haskell-euler-test:

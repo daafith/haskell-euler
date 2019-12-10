@@ -4,7 +4,6 @@ module Problem0004
     ) where
 
 import Util
-import Data.List.Unique
 
 main :: IO ()
 main = do
@@ -12,6 +11,7 @@ main = do
     putStrLn "The answer is:"
     let answer = maximum $ palindromes 100 999
     print answer
+    answer `toOutput` "0004"
 
 description = "\nA palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.\
 \Find the largest palindrome made from the product of two 3-digit numbers.\n"
