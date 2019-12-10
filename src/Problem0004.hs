@@ -16,6 +16,7 @@ main = do
 description = "\nA palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.\
 \Find the largest palindrome made from the product of two 3-digit numbers.\n"
 
+palindromes :: Int -> Int -> [Int]
 palindromes l u = [ x*y::Int | x <- [u, u-1..l] , y <- [x, x-1..l], isPalindrome (x*y) ]
     where isPalindrome p =  (read . reverse . show $ p) == p
 
