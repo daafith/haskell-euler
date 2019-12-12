@@ -12,6 +12,12 @@ stack build
 ```
 stack exec haskell-euler
 ```
+Or use ghci to browse the specific modules and / or execute functiond, e.g.
+```
+stack ghci
+ :browse Problem0005
+
+```
 
 ## Run Tests
 ```
