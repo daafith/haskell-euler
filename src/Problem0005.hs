@@ -16,4 +16,5 @@ main = do
 description = "\nProblem 5:\n2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.\n\
 \What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?\n"
 
+leastCommonMultiple :: Integral a => a -> a
 leastCommonMultiple n = foldr1 lcm [2..n]
