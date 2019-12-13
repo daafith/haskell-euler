@@ -22,8 +22,8 @@ description = "\nProblem 6:\nThe sum of the squares of the first ten natural num
 \Find the difference between the sum of the squares of the first one hundred natural numbers and the square of the sum.\n"
 
 sumOfSquares :: (Num a, Enum a) => a -> a
-sumOfSquares u = sum [x^2 | x <- [1..u]] 
+sumOfSquares u = sum $ map (^2) [1..u] 
 
 squareOfSum :: (Num a, Enum a) => a -> a
-squareOfSum u = sum [x | x <- [1..u]]^2
+squareOfSum u = sum [1..u]^2
 
