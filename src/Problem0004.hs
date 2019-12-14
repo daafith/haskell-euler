@@ -4,6 +4,7 @@ module Problem0004
     ) where
 
 import Util
+import Data.List
 
 main :: IO ()
 main = do
@@ -17,7 +18,7 @@ description = "\nProblem 4:\nA palindromic number reads the same both ways. The 
 \Find the largest palindrome made from the product of two 3-digit numbers.\n"
 
 palindromes :: Int -> Int -> [Int]
-palindromes l u = [ x*y::Int | x <- [u, u-1..l] , y <- [x, x-1..l], isPalindrome (x*y) ]
+palindromes l u = nub [ x*y::Int | x <- [u, u-1..l] , y <- [x, x-1..l], isPalindrome (x*y) ]
     where isPalindrome p =  (read . reverse . show $ p) == p
 
 
