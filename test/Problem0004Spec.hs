@@ -13,7 +13,7 @@ tests = testGroup "Tests" [unitTests]
 unitTests :: TestTree
 unitTests = testGroup "Problem0004 Unit tests"
     [
-        testCase "displays the max palindrome of 1..n * 1..n" $ do
-            9 @=? (maximum $ (palindromes 1 10))
-            121 @=? (maximum $ (palindromes 1 11))
+        testCase "displays the palindromes in p..q * p..q" $ do
+            [9,8,7,6,5,4,3,2,1] @=? palindromes 1 10
+            [121,99,88,77,66,55,44,33,22,8,9,6,4] @=? palindromes 2 11
     ]
