@@ -10,6 +10,7 @@ import qualified Problem0005
 import qualified Problem0006
 import qualified Problem0007
 import qualified Problem0008
+import qualified Problem0009
 
 runner :: IO ()
 runner = do
@@ -29,5 +30,7 @@ runner = do
         Problem0007.main
         separator
         Problem0008.main
+        separator
+        Problem0009.main
 
 separator = putStrLn "\n|------------------|"

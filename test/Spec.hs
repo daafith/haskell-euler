@@ -7,6 +7,7 @@ import qualified Problem0005Spec
 import qualified Problem0006Spec
 import qualified Problem0007Spec
 import qualified Problem0008Spec
+import qualified Problem0009Spec
 
 main :: IO ()
 main = defaultMain tests
@@ -22,4 +23,5 @@ tests = testGroup "All unit tests"
         , Problem0006Spec.tests
         , Problem0007Spec.tests
         , Problem0008Spec.tests
+        , Problem0009Spec.tests
     ]
