@@ -22,4 +22,4 @@ fibonacci :: [Integer]
 fibonacci = 0 : 1 : zipWith (+) fibonacci (tail fibonacci)
 
 sumOfEvenFibLessThan :: Integer -> Integer
-sumOfEvenFibLessThan n = sum . filter odd . takeWhile (< n) $ fibonacci
+sumOfEvenFibLessThan n = sum $ filter even $ takeWhile (< n) $ fibonacci

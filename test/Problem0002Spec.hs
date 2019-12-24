@@ -18,5 +18,5 @@ unitTests = testGroup "Problem0002 Unit tests"
             [0,1,1,2,3,5,8] @=? (takeWhile (< 13) $ fibonacci)
 
         , testCase "sums the even fibonacci values" $ do
-            10 @=? (sumOfEvenFibLessThan 13)
+            10 @=? (sumOfEvenFibLessThan 14)
     ]

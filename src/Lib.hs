@@ -36,4 +36,4 @@ runner = do
         separator
         Problem0010.main
 
-separator = putStrLn "\n|------------------|"
+separator = putStrLn "\n|---------------------------------------|"

@@ -20,11 +20,18 @@ Problem0005.main :: IO ()
 leastCommonMultiple :: Integral a => a -> a
 % Problem0005.leastCommonMultiple 25
 26771144400
-% Problem0003.primeFactors 26771144400
-[2,2,2,2,3,3,5,5,7,11,13,17,19,23]
+% Problem0003.primeFactors 267759
+[3,3,3,47,211]
 ```
 
 ## Run Tests
 ```
 stack test
 ```
+
+## TODO
+Optimize performance of
+- Problem 4
+- Problem 7
+- Problem 9
+- Problem 10

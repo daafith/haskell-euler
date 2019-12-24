@@ -19,4 +19,4 @@ description = "\nProblem 9:\nA Pythagorean triplet is a set of three natural num
 \There exists exactly one Pythagorean triplet for which a + b + c = 1000. Find the product abc.\n"
 
 pythagoreanTriplet :: (Num c, Eq c, Enum c) => c -> [(c, c, c)]
-pythagoreanTriplet s = take 1 [ (a,b,c) | c <- [1..s], b <- [1..c], a <- [1..b], a^2 + b^2 == c^2, a + b + c == s]
+pythagoreanTriplet s = take 1 [ (a,b,c) | c <- [1..s-1], b <- [1..c-1], a <- [1..b-1], a^2 + b^2 == c^2, a + b + c == s]
